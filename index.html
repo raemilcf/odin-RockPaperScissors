@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rock Paper Scissors</title>
+        <script src="./javascript.js"></script>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div class="bodyGame">
+            <h1>Rock, Paper, Scissors Game!</h1>
+            <h4>Please write wich option you decide to go for:</h4>
+            <div  class="rowinput">
+                <div class="colunminput">
+                    <label>YOU</label>
+                    <input id="weapon" onclick="cleanMachine()"  type="text"/>
+                </div>
+                <div class="colunminput">
+                    <label>MACHINE</label>
+                    <input id="machine" type="text"  disabled />
+                </div>
+            </div>
+            <button id="play" onclick="game()" >Play!</button>
+            <p id="result" class="result"></p>
+            <h2>Chart</h2>
+            <div class="rowinput">
+                <div class="colunminput">
+                    <label>YOU</label>
+                    <input id="resultYou" type="number" disabled />
+                </div>
+                <div class="colunminput">
+                    <label>MACHINE</label>
+                    <input id="resultMachine"  type="number" disabled />
+                </div>
+            </div>
+            <p id="winner" class="result"></p>
+            <button id="restart" onclick="restart()">Play Again!</button>
+
+            <h2>Rules!</h2>
+            <div class="textalign">
+                <p >This is a five round game, the one with more point will be the winner.</p>
+                <p >The input is not case sensitive</p>
+    
+            </div>
+           
+
+        </div>
+
+    </body>
+    <footer>
+        <p>Copyright ® Raemil Corniel </p>
+    </footer>
+</html>
